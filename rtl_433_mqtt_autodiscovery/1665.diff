@@ -33,7 +33,7 @@ index 706d9437..bccf3ebf 100755
      },
  
 +    "channel": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "CH",
 +        "config": {
 +           "automation_type": "trigger",
@@ -42,7 +42,7 @@ index 706d9437..bccf3ebf 100755
 +        }
 +    },
 +    "button": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "BTN",
 +        "config": {
 +           "automation_type": "trigger",
@@ -51,7 +51,7 @@ index 706d9437..bccf3ebf 100755
 +        }
 +    },
 +    "code": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "CODE",
 +        "config": {
 +           "automation_type": "trigger",
@@ -60,7 +60,7 @@ index 706d9437..bccf3ebf 100755
 +        }
 +    },
 +    "unit": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "unit",
 +        "config": {
 +           "automation_type": "trigger",
@@ -69,7 +69,7 @@ index 706d9437..bccf3ebf 100755
 +        }
 +    },
 +    "tristate": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "tristate",
 +        "config": {
 +           "automation_type": "trigger",
@@ -78,7 +78,7 @@ index 706d9437..bccf3ebf 100755
 +        }
 +    },
 +    "cmd": {
-+        "device_type": "device_automation",
++        "device_type": "device_automations",
 +        "object_suffix": "CMD",
 +        "config": {
 +           "automation_type": "trigger",
@@ -109,7 +109,7 @@ index 706d9437..bccf3ebf 100755
 -    config["unique_id"] = object_name
 -    config["device"] = { "identifiers": object_id, "name": object_id, "model": model, "manufacturer": "rtl_433" }
 +
-+    if device_type == 'device_automation':
++    if device_type == 'device_automations':
 +        config["topic"] = topic
 +        config["platform"] = 'mqtt'
 +        config["payload"] = value
