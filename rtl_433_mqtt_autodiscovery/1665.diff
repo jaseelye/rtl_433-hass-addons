@@ -31,7 +31,16 @@ index 706d9437..bccf3ebf 100755
 @@ -537,6 +545,61 @@ mappings = {
          }
      },
- 
++    "event": {
++        "device_type": "sensor",
++        "object_suffix": "alarm",
++        "config": {
++           "name": "Water alarm",
++           "device_class": "moisture",
++           "payload_on": "Water Leak",
++           "payload_off": "Button Press",
++        }
++    }, 
 +    "channel": {
 +        "device_type": "device_automations",
 +        "object_suffix": "CH",
@@ -75,17 +84,6 @@ index 706d9437..bccf3ebf 100755
 +           "automation_type": "trigger",
 +           "type": "button_short_release",
 +           "subtype": "button_1",
-+        }
-+    },
-+
-+    "event": {
-+        "device_type": "sensor",
-+        "object_suffix": "alarm",
-+        "config": {
-+           "name": "Water alarm",
-+           "device_class": "moisture",
-+           "payload_on": "Water Leak",
-+           "payload_off": "Button Press",
 +        }
 +    },
 +    "cmd": {
