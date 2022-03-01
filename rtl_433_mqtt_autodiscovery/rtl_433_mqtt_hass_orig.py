@@ -119,24 +119,24 @@ SKIP_KEYS = [ "mic", "mod", "freq", "sequence_num", "message_type", "exception",
 # @todo - Model specific definitions might be needed
 
 mappings = {
-     "time": {
-         "device_type": "sensor",
-         "object_suffix": "UTC",
-         "config": {
-             "device_class": "timestamp",
-             "name": "Timestamp",
-             "icon": "mdi:timer"
-         }
+    "time": {
+        "device_type": "sensor",
+        "object_suffix": "UTC",
+        "config": {
+            "device_class": "timestamp",
+            "name": "Timestamp",
+            "icon": "mdi:timer"
+        }
      },
      "event": {
-         "device_type": "binary_sensor",
-         "object_suffix": "alarm",
-         "config": {
-            "device_class": "moisture",
-            "force_update": "true",
-            "payload_on": "Water Leak",
-            "payload_off": "Button Press",
-         }
+        "device_type": "binary_sensor",
+        "object_suffix": "alarm",
+        "config": {
+           "device_class": "moisture",
+           "force_update": "true",
+           "payload_on": "Water Leak",
+           "payload_off": "Button Press",
+        }
      }, 
     "temperature_C": {
         "device_type": "sensor",
@@ -190,7 +190,7 @@ mappings = {
             "device_class": "battery",
             "name": "Battery",
             "unit_of_measurement": "%",
-            "value_template": "{{ float(value) * 99 + 1 }}",
+            "value_template": "{{ float(value) * 100 | round(2) }}",
             "state_class": "measurement",
             "entity_category": "diagnostic"
         }
