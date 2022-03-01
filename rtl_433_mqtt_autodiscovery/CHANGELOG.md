@@ -1,3 +1,7 @@
+## [0.3.1.1] - 2022-02-28
+
+- Jason's Build for Govee
+
 ## [0.3.1] - 2022-02-19
 
 - Add builds for aarch64
