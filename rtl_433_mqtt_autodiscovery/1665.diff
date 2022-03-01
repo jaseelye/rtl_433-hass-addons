@@ -33,7 +33,7 @@ index 706d9437..bccf3ebf 100755
      },
 +    "event": {
 +        "device_type": "sensor",
-+        "object_suffix": "alarm",
++        "object_suffix": "EVENT",
 +        "config": {
 +           "name": "Water alarm",
 +           "device_class": "moisture",
