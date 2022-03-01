@@ -8,7 +8,7 @@ ARG rtl433GitRevision=2b49b81aafee4aef6015385ee44dc7e0d9f0073d
 #     /
 
 #RUN apk add patch
-RUN wget https://raw.githubusercontent.com/jaseelye/rtl_433-hass-addons/main/rtl_433_mqtt_autodiscovery/rtl_433_mqtt_hass.py -O rtl_433_mqtt_hass.py
+RUN wget https://raw.githubusercontent.com/jaseelye/rtl_433-hass-addons/main/rtl_433_mqtt_autodiscovery/rtl_433_mqtt_hass_orig.py -O rtl_433_mqtt_hass.py
 
 # https://github.com/merbanan/rtl_433/pull/1665#issuecomment-1034188020
 #RUN patch -u rtl_433_mqtt_hass.py 1665.diff
