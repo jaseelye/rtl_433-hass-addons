@@ -20,7 +20,7 @@ index 706d9437..bccf3ebf 100755
 +        "device_type": "sensor",
 +        "object_suffix": "UTC",
 +        "config": {
-+            "device_class": "date",
++            "device_class": "timestamp",
 +            "name": "Timestamp",
 +            "icon": "mdi:clock-in"
 +        }
