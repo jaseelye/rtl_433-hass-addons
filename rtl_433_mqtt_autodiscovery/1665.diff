@@ -25,12 +25,6 @@ index 706d9437..bccf3ebf 100755
 +            "icon": "mdi:clock-in"
 +        }
 +    },
-     "battery_ok": {
-         "device_type": "sensor",
-         "object_suffix": "B",
-@@ -537,6 +545,61 @@ mappings = {
-         }
-     },
 +    "event": {
 +        "device_type": "sensor",
 +        "object_suffix": "EVENT",
@@ -41,6 +35,12 @@ index 706d9437..bccf3ebf 100755
 +           "payload_off": "Button Press",
 +        }
 +    }, 
+     "battery_ok": {
+         "device_type": "sensor",
+         "object_suffix": "B",
+@@ -537,6 +545,61 @@ mappings = {
+         }
+     },
 +    "channel": {
 +        "device_type": "device_automations",
 +        "object_suffix": "CH",
