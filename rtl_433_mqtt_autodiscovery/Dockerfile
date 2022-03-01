@@ -4,10 +4,10 @@ FROM ${BUILD_FROM} as builder
 ARG rtl433GitRevision=2b49b81aafee4aef6015385ee44dc7e0d9f0073d
 
 # Copy files from root folder
-COPY 1665.diff \
-     /
+#COPY 1665.diff \
+#     /
 
-RUN apk add patch
+#RUN apk add patch
 RUN wget https://raw.githubusercontent.com/jaseelye/rtl_433-hass-addons/main/rtl_433_mqtt_autodiscovery/rtl_433_mqtt_hass.py -O rtl_433_mqtt_hass.py
 
 # https://github.com/merbanan/rtl_433/pull/1665#issuecomment-1034188020
