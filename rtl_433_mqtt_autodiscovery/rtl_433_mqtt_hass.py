@@ -124,7 +124,7 @@ mappings = {
          "device_type": "sensor",
          "object_suffix": "UTC",
          "config": {
-             "device_class": "date",
+             "device_class": "timestamp",
              "name": "Timestamp",
              "icon": "mdi:clock"
          }
