@@ -77,6 +77,19 @@ index 706d9437..bccf3ebf 100755
 +           "subtype": "button_1",
 +        }
 +    },
++
++    "event": {
++        "device_type": "sensor",
++        "object_suffix": "alarm",
++        "config": {
++           "name": "Water alarm",
++           "device_class": "moisture",
++           "force_update": "true",
++           "payload_on": "Water Leak",
++           "payload_off": "Button Press",
++           "state_topic": "rtl_433/+/+/+/52547/event"
++        }
++    },
 +    "cmd": {
 +        "device_type": "device_automations",
 +        "object_suffix": "CMD",
