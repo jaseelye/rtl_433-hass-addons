@@ -27,10 +27,10 @@ index 706d9437..bccf3ebf 100755
 +    },
 +    "event": {
 +        "device_type": "binary_sensor",
-+        "object_suffix": "ALARM",
++        "object_suffix": "alarm",
 +        "config": {
 +           "device_class": "moisture",
-+           "name": "Water alarm",
++           "force_update": "true",
 +           "payload_on": "Water Leak",
 +           "payload_off": "Button Press",
 +        }
