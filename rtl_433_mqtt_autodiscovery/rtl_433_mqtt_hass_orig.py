@@ -125,7 +125,7 @@ mappings = {
          "config": {
              "device_class": "timestamp",
              "name": "Timestamp",
-             "icon": "mdi:clock"
+             "icon": "mdi:timer"
          }
      },
      "event": {
